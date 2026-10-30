@@ -11,6 +11,13 @@ const config={
     //obligatorio
     type:Phaser.AUTO,       //webgl o canvas o automático
     backgroundColor:'#34495E', //fondo del lienzo
+    physics:{
+        default:'arcade',   //Motor de física por defecto (en este caso arcade)
+        arcade:{
+            gravity:{y:0}, //configurar la gravedad si es necesario 
+            debug:true  //Activa o desactiva el modmo de depuración de física
+        }
+    },
     scale:{
         width: 1136, //tamaño del lienzo
         height:640,
